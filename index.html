@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentless HomeTrade</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="{{ url('/') }}">
+                <img src="{{ asset('images/logo.png') }}" alt="Site Logo" height="100">
+            </a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- ☰ symbol -->
+        </div>
+
+        <div id="navContainer">
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="{{ url('/') }}">Faqja Kryesore</a></li>
+                    <li class="dropdown">
+                        <a href="{{ url('/') }}">Listimet</a>
+                        <!-- 
+                    <ul class="dropdown-content">
+                        <li><a href="{{ url('/') }}">Blerje</a></li>
+                        <li><a href="{{ url('/') }}">Qira</a></li>
+                        <li><a href="{{ url('/') }}">Airbnb</a></li>
+                    </ul> 
+                    -->
+                    </li>
+                    <li><a href="{{ url('/') }}">Rreth Nesh</a></li>
+                    <li><a href="{{ url('/') }}">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="btnContainer">
+                <button class="loginBtn">Login</button>
+                <button class="registerBtn">Regjistrohu</button>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const navContainer = document.getElementById('navContainer');
+            navContainer.classList.toggle('active');
+        }
+    </script>
+
+    <section class="hero-section">
+        <img src="/images/Tirana-Albania-1242163621.jpg" alt="Hero Image" class="hero-image">
+        <div>
+            <h1>NJË RISI PO VJEN NË TREGUN E REAL ESTATE NË SHQIPËRI</h1>
+            <p>
+                Jeni në kërkim të një shtëpie apo apartemneti, dhe jo vetëm, por jeni lodhur nga tarifat e larta
+                të agjentëve imobiliarë? Atëherë, këtu jeni në vendin e duhur!
+            </p>
+            <button>
+                Shfleto Listimet
+            </button>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div>
+            <h2>Kush Jemi Ne</h2>
+            <h3>Më shumë rreth nesh...</h3>
+            <p>Ne jemi platforma më e re e Real Estate në Shqipëri</p>
+            <p>Platforma jonë është një start-up, i cili synon t'i japë zgjidhje një problemi shqetësues që është
+                shfaqur
+                në vendin tonë me rritjen e shpejtë që ka pësuar tregu i pasurive te paluajtshme giatë
+                viteve të fundit. Kjo është një platformë nga qytetarët per qytetarët, me qëllim shmangien e tarifave të
+                larta dhe
+                sorollatjeve nga agjensitë dhe agjentet imobiliare. Tanimë ju nuk keni nevojë t'u jepni shuma të larta
+                parash
+                agjenteve imobiliarë për të gjetur një shtëpi, por kontaktoni direkt me pronarët, duke kursyer para dhe
+                kohën tuaj te çmuar.
+            </p>
+        </div>
+        <img src="/images/iStock-521203512-3321381107.jpg" class="info-image">
+    </section>
+
+    <section class="category-cards-section">
+        <h2>Çfarë po kërkoni?</h2><br>
+        <h3>Zgjidhni një kategori dhe eksploroni opsionet</h3><br>
+        <div class="cards-container">
+            <div class="info-card">
+                <img src="/images/blerjee.jpeg">
+                <h3>
+                    <a href="#">BLERJE</a>
+                </h3>
+            </div>
+            <div class="info-card">
+                <img src="/images/qiraa.png">
+                <h3>
+                    <a href="#">QIRA</a>
+                </h3>
+            </div>
+            <div class="info-card">
+                <img src="/images/airbnb.jpg">
+                <h3>
+                    <a href="">AIRBNB</a>
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <div class="call-to-action-slogan">
+            <h2>
+                Nëse jeni pronar, ne kemi menduar edhe për ju!
+            </h2>
+            <h3>
+                Krijoni një llogari të dedikuar pronari dhe postoni listimin tuaj prenda pak minutave.
+                Çfarë po prisni!
+            </h3>
+        </div>
+        <div class="call-to-action-btn">
+            <button>
+                KRIJO NJË LLOGARI TANI
+            </button>
+        </div>
+    </section>
+
+    <section class="user-reviews">
+        <h2>Çfarë thonë përdoruesit tanë</h2>
+        <div class="reviews-container">
+
+            <div class="review-card">
+                <div class="stars">
+                    <i class="far fa-star valid-star"></i>
+                    <i class="far fa-star valid-star"></i>
+                    <i class="far fa-star valid-star"></i>
+                    <i class="far fa-star valid-star"></i>
+                    <i class="far fa-star empty-star"></i>
+                </div>
+                <div class="review-title">
+                    <p>Shumë i kënaqur</p>
+                </div>
+                <div class="review-body">
+                    <p>Gjeta një çmim të mirë për shtëpinë e përsosur. Shpejt dhe lehtë, pa probleme.</p>
+                </div>
+                <div class="profile">
+                    <div class="image">
+                        <img src="/images/default-pfp.jpg" alt="User Image">
+                    </div>
+                    <div>
+                        <p class="username">Arben C</p>
+                        <p class="review-date">15/11/2025</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="stars">
+                    <i class="far fa-star valid-star"></i>
+                    <i class="far fa-star valid-star"></i>
+                    <i class="far fa-star valid-star"></i>
+                    <i class="far fa-star valid-star"></i>
+                    <i class="far fa-star valid-star"></i>
+                </div>
+                <div class="review-title">
+                    <p>E rekomandoj</p>
+                </div>
+                <div class="review-body">
+                    <p>Si studente, i kam fondet e uleta. Fola direkt me pronarin dhe rashë dakord për një çmim të
+                        arsyeshëm.</p>
+                </div>
+                <div class="profile">
+                    <div class="image">
+                        <img src="/images/pfp4.jpeg" alt="User Image">
+                    </div>
+                    <div>
+                        <p class="username">Marlena</p>
+                        <p class="review-date">1/12/2025</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="stars">
+                    <i class="far fa-star valid-star"></i>
+                    <i class="far fa-star valid-star"></i>
+                    <i class="far fa-star valid-star"></i>
+                    <i class="far fa-star valid-star"></i>
+                    <i class="far fa-star valid-star"></i>
+                </div>
+                <div class="review-title">
+                    <p>Më pëlqen</p>
+                </div>
+                <div class="review-body">
+                    <p>Udhëtoj shpesh dhe integrimi me Google Maps e bën shumë të thjeshtë gjetjen e vendndodhjes.</p>
+                </div>
+                <div class="profile">
+                    <div class="image">
+                        <img src="/images/Pin by Boram Han on cute things | Profile pictures instagram, Instagram profile pic, Instagram profile picture ideas.jpg" alt="User Image">
+                    </div>
+                    <div>
+                        <p class="username">Marsida17</p>
+                        <p class="review-date">5/12/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <section class="newsletter">
+            <p>Abonohuni për t'u njoftuar për listimet më të reja.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button>
+                    <i class="fa-solid fa-envelope"></i>
+                </button>
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="f-container">
+
+                <div class="footer-content">
+                    <h3>KONTAKT</h3>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p>info@agentless-hometrade.com</p>
+                    <p>+355 69 123 4567</p>
+                </div>
+
+                <div class="footer-content">
+                    <h3>MENU</h3>
+                    <ul class="list">
+                        <li><a href="#">Faqja Kryesore</a></li>
+                        <li><a href="#">Listimet</a></li>
+                        <li><a href="#">Rreth Nesh</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>LISTIMET</h3>
+                    <ul class="list">
+                        <li><a href="#">Blerje</a></li>
+                        <li><a href="#">Qira</a></li>
+                        <li><a href="#">Airbnb</a></li>
+                        <li><a href="#">Publikoni Pronën Tuaj</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>TË TJERA</h3>
+                    <ul class="list">
+                        <li><a href="#">Politikat e Privatësisë</a></li>
+                        <li><a href="#">Termat dhe Kushtet</a></li>
+                        <li><a href="#">Pyetje Të Shpeshta</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom-bar">
+                <p>&copy; 2025 Agentless HomeTrade. Të gjitha të drejtat e rezervuara</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
