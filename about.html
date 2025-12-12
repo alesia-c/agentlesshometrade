@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentless HomeTrade</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/AG-LOGO copy.png" alt="Site Logo" height="100">
+            </a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- ☰ symbol -->
+        </div>
+
+        <div id="navContainer">
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="index.html">Faqja Kryesore</a></li>
+                    <li class="dropdown">
+                        <a href="">Listimet</a>
+                    </li>
+                    <li><a href="about.html">Rreth Nesh</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="btnContainer">
+                <button class="loginBtn">Login</button>
+                <button class="registerBtn">Regjistrohu</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="abt-hero">
+        <img src="images/abt-hero-img.jpg" alt="">
+        <h1>
+            Me ne gjetja e një shtëpie bëhet më e lehtë se kurrë.
+        </h1>
+    </section>
+
+    <section class="story">
+        <div>
+            <h2>Historia Jonë</h2>
+            <p>
+                Platforma jonë lindi nga një përvojë personale. Ishte e vështirë të gjeje ose të ofroje një banesë pa
+                kaluar nëpër procedura
+                të komplikuara dhe pa paguar komisione të larta të agjentëve. Shpejt kuptuam se ky ishte një problem i
+                zakonshëm për shumë
+                njerëz. Pronat duhej të publikoheshin thjesht dhe kërkuesit duhej të gjenin shtëpi pa ndërmjetës. Kështu
+                lindi ideja jonë për
+                një marketplace të drejtë dhe transparent, ku komunikimi ndodh drejtpërdrejt dhe pa barriera. Nga një
+                ekip i vogël me pasion për
+                teknologjinë dhe përvojën në tregun imobiliar, u krijua një platformë që u jep përdoruesve kontrollin e
+                plotë.
+            </p>
+        </div>
+        <div>
+            <img src="images/our-story-img.jpg">
+        </div>
+    </section>
+
+    <section class="mission">
+        <div>
+            <img src="images/our-mission.jpg">
+        </div>
+        <div>
+            <h2>Misioni</h2>
+            <p>
+                Misioni ynë është të transformojmë tregun imobiliar në Shqipëri, si dhe mënyrën se si njerëzit blejnë,
+                shesin dhe marrin me qira prona duke hequr ndërmjetësit e
+                panevojshëm dhe duke krijuar një hapësirë të drejtë, të thjeshtë dhe të aksesueshme për të gjithë.
+                Synojmë t’i lidhim drejtpërdrejt
+                pronarët me kërkuesit e banesave, duke ofruar një proces të pastër dhe transparent. Besimi, qartësia dhe
+                efikasiteti janë thelbi i çdo gjëje që ndërtojmë.
+            </p>
+        </div>
+    </section>
+
+    <section class="values">
+        <div>
+            <h2>Vlerat Tona</h2>
+            <div>
+                <div>
+                    <h4>Transpareca</h4>
+                    <p>
+                        Ne besojmë se tregu imobiliar duhet të jetë i hapur dhe i sinqertë. Pa komisione të fshehta dhe
+                        ndërhyrje të panevojshme, vetëm informacion të qartë dhe komunikim të drejtpërdrejtë.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Thjeshtësia</h4>
+                    <p>
+                        Çdo funksion i platformës është ndërtuar për t’ju kursyer kohë dhe stres. Publikimi dhe kërkimi
+                        i pronave bëhen brenda pak minutave.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Besimi</h4>
+                    <p>
+                        Siguria dhe serioziteti janë prioriteti jonë. Kujdesemi që përdoruesit të kenë një ambient të
+                        besueshëm për të komunikuar dhe bashkëpunuar.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Kontrolli</h4>
+                    <p>
+                        Përdoruesit vendosin vetë: pronarët menaxhojnë pronën e tyre, ndërsa kërkuesit zgjedhin lirisht
+                        me kë të komunikojnë.
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Komuniteti</h4>
+                    <p>
+                        Ne krijojmë një hapësirë ku njerëz realë gjejnë shtëpi reale. Jo vetëm një faqe njoftimesh, por
+                        një komunitet që ndërton mundësi dhe besim.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="newsletter">
+            <p>Abonohuni për t'u njoftuar për listimet më të reja.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button>
+                    <i class="fa-solid fa-envelope"></i>
+                </button>
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="f-container">
+
+                <div class="footer-content">
+                    <h3>KONTAKT</h3>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p>info@agentless-hometrade.com</p>
+                    <p>+355 69 123 4567</p>
+                </div>
+
+                <div class="footer-content">
+                    <h3>MENU</h3>
+                    <ul class="list">
+                        <li><a href="#">Faqja Kryesore</a></li>
+                        <li><a href="#">Listimet</a></li>
+                        <li><a href="#">Rreth Nesh</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>LISTIMET</h3>
+                    <ul class="list">
+                        <li><a href="#">Blerje</a></li>
+                        <li><a href="#">Qira</a></li>
+                        <li><a href="#">Airbnb</a></li>
+                        <li><a href="#">Publikoni Pronën Tuaj</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>TË TJERA</h3>
+                    <ul class="list">
+                        <li><a href="#">Politikat e Privatësisë</a></li>
+                        <li><a href="#">Termat dhe Kushtet</a></li>
+                        <li><a href="#">Pyetje Të Shpeshta</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom-bar">
+                <p>&copy; 2025 Agentless HomeTrade. Të gjitha të drejtat e rezervuara</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
