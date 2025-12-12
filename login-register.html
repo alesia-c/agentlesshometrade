@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentless HomeTrade</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login-register.css">
+</head>
+
+<body>
+    <h2>MIRË SE VINI</h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Krijo Llogarinë</h1>
+               <!--  <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span> -->
+                <input type="text" placeholder="Emri" readonly/>
+                <input type="text" placeholder="Mbiemri" readonly/>
+                <input type="email" placeholder="Email" readonly/>
+                <input type="number" placeholder="Numër Telefoni" readonly/>
+                <input type="password" placeholder="Fjalëkalimi" readonly/>
+                <button>REGJISTROHU</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Log In</h1>
+                <!-- <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                --> <!-- <span>or use your account</span> -->
+                <input type="email" placeholder="Emaili" readonly/>
+                <input type="password" placeholder="Fjalëkalimi" readonly/>
+                <a href="#">Keni harruar fjalëkalimin?</a>
+                <button>LOG IN</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <img src="images/AG-LOGO copy.png" alt="logoja e website-it" width="200px">
+                    <p>Nëse keni një llogari aktive logohuni këtu.</p>
+                    <button class="ghost" id="signIn">LOG IN</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <img src="images/AG-LOGO copy.png" alt="logoja e website-it" width="200px">
+                    <p>Krijoni një llogari nëse nuk e keni bërë ende!</p>
+                    <button class="ghost" id="signUp">REGJISTROHU</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+</body>
