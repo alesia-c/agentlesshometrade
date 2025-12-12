@@ -607,3 +607,80 @@ h3 {
 .empty-star {
     color: #0D0B0B;
 }
+
+
+
+/*Footer Responivity*/
+@media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
+        .newsletter {
+            flex-direction: column;
+            align-items: stretch;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .newsletter p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-form {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .newsletter-form input{
+            width: 91.5%;
+        }
+        .newsletter-form button {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .f-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-content p {
+        width: 100%;
+        padding-top: 0.5rem;
+    }
+
+    .list li {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 0.3rem 0;
+    }
+
+    h3 {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .fa-brands {
+        font-size: 1.8rem;
+    }
+
+    .fa-brands:hover {
+        font-size: 2rem;
+    }
+
+    .bottom-bar p {
+        font-size: 16px;
+    }
+}
